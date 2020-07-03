@@ -1,0 +1,21 @@
+<configs>
+
+<set xpath="/recipes/recipe[@name='thrownAmmoMolotovCocktail']/ingredient[@name='ammoGasCan']/@count">150</set>
+<set xpath="/recipes/recipe[@name='farmPlotBlockPlayer']/ingredient[@name='resourcePotassiumNitratePowder']/@count">10</set>
+<set xpath="/recipes/recipe[@name='farmPlotBlockPlayer']/ingredient[@name='resourceClayLump']/@count">30</set>
+<set xpath="/recipes/recipe[@name='foodBaconAndEggs']/ingredient[@name='foodRawMeat']/@count">3</set>
+<set xpath="/recipes/recipe[@name='foodGrilledMeat']/ingredient[@name='foodRawMeat']/@count">3</set>
+<set xpath="/recipes/recipe[@name='foodChiliDog']/ingredient[@name='foodRawMeat']/@count">3</set>
+<set xpath="/recipes/recipe[@name='foodMeatStew']/ingredient[@name='foodRawMeat']/@count">3</set>
+<set xpath="/recipes/recipe[@name='foodSteakAndPotato']/ingredient[@name='foodRawMeat']/@count">3</set>
+
+<set xpath="/recipes/recipe[@name='foodCanSham']/ingredient[@name='resourceAnimalFat']/@count">3</set>
+
+<set xpath="/recipes/recipe[@name='foodShepardsPie']/ingredient[@name='resourceAnimalFat']/@count">2</set>
+<set xpath="/recipes/recipe[@name='foodGumboStew']/ingredient[@name='resourceAnimalFat']/@count">2</set>
+<set xpath="/recipes/recipe[@name='foodSpaghetti']/ingredient[@name='resourceAnimalFat']/@count">2</set>
+<set xpath="/recipes/recipe[@name='foodTunaFishGravyToast']/ingredient[@name='resourceAnimalFat']/@count">2</set>
+
+
+
+</configs>

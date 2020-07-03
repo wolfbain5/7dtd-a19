@@ -1,0 +1,61 @@
+<configs>
+<append xpath="/recipes">
+
+
+	<recipe name="resourcePaper" count="1">
+		<ingredient name="oldCash" count="1"/>
+	</recipe>
+	
+	<recipe name="ammoCrossbowBoltSteelAP" count="1">
+		<ingredient name="ammoArrowSteelAP" count="1"/>
+	</recipe>
+	
+	<recipe name="ammoArrowStone" count="1">
+		<ingredient name="ammoCrossbowBoltStone" count="1"/>
+	</recipe>
+	
+	<recipe name="ammoArrowIron" count="1">
+		<ingredient name="ammoCrossbowBoltIron" count="1"/>
+	</recipe>
+	
+	<recipe name="ammoArrowSteelAP" count="1">
+		<ingredient name="ammoCrossbowBoltSteelAP" count="1"/>
+	</recipe>
+	
+	<recipe name="ammoCrossbowBoltStone" count="1">
+		<ingredient name="ammoArrowStone" count="1"/>
+	</recipe>
+	
+	<recipe name="ammoCrossbowBoltFlaming" count="1">
+		<ingredient name="ammoArrowFlaming" count="1"/>
+	</recipe>
+	
+	<recipe name="ammoArrowFlaming" count="1">
+		<ingredient name="ammoCrossbowBoltFlaming" count="1"/>
+	</recipe>
+	<recipe name="ammoCrossbowBoltExploding" count="1">
+		<ingredient name="ammoArrowExploding" count="1"/>
+	</recipe>
+	<recipe name="ammoArrowExploding" count="1">
+		<ingredient name="ammoCrossbowBoltExploding" count="1"/>
+	</recipe>
+	<recipe name="ammoCrossbowBoltIron" count="1">
+		<ingredient name="ammoArrowIron" count="1"/>
+	</recipe>
+	
+	<recipe name="foodFishTacos" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+	<ingredient name="foodCanTuna" count="1"/>
+	<ingredient name="foodCornMeal" count="2"/>
+	</recipe>
+	
+	<recipe name="foodFishTacos" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+	<ingredient name="foodCanCatfood" count="2"/>
+	<ingredient name="foodCornMeal" count="2"/>
+	</recipe>
+	
+	
+</append>
+
+
+
+</configs>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="friendlier recipes" />
+		<Description value=" multi player fixes for some recipes especially food" />
+		<Author value="wolfbain5" />
+		<Version value="a19" />
+	</ModInfo>
+</xml>

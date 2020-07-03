@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="more recieps" />
+		<Description value="adds some more recipes to the game" />
+		<Author value="wolfbain5" />
+		<Version value="a19" />
+	</ModInfo>
+</xml>
