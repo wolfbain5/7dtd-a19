@@ -1,0 +1,12 @@
+<config>
+
+<!-- tool stamina drain -->
+<set xpath="/items/item[@name='meleeToolAxeT1IronFireaxe']/effect_group[@name='meleeToolAxeT1IronFireaxe']/passive_effect[@name='StaminaLoss'][@operation='base_set']/@value">16</set>
+<set xpath="/items/item[@name='meleeToolAxeT2SteelAxe']/effect_group[@name='meleeToolAxeT2SteelAxe']/passive_effect[@name='StaminaLoss'][@operation='base_set']/@value">24</set>
+<set xpath="/items/item[@name='meleeToolPickT1IronPickaxe']/effect_group[@name='meleeToolPickT1IronPickaxe']/passive_effect[@name='StaminaLoss'][@operation='base_set']/@value">16</set>
+<set xpath="/items/item[@name='meleeToolPickT2SteelPickaxe']/effect_group[@name='meleeToolPickT2SteelPickaxe']/passive_effect[@name='StaminaLoss'][@operation='base_set']/@value">24</set>
+<set xpath="/items/item[@name='meleeToolShovelT1IronShovel']/effect_group[@name='meleeToolShovelT1IronShovel']/passive_effect[@name='StaminaLoss'][@operation='base_set']/@value">16</set>
+<set xpath="/items/item[@name='meleeToolShovelT2SteelShovel']/effect_group[@name='meleeToolShovelT2SteelShovel']/passive_effect[@name='StaminaLoss'][@operation='base_set']/@value">24</set>
+
+
+</config>

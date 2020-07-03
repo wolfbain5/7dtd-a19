@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="tool stamina fix" />
+		<Description value="lowers tool stamina usage to be more friendly" />
+		<Author value="wolfbain5" />
+		<Version value="a19" />
+	</ModInfo>
+</xml>
