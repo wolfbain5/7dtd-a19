@@ -1,0 +1,1 @@
+Crate up broken workstations, break down existing ones to use to remake workstations cheaper back at your base. 1/2 the materials to remake them, some of them just need a specialty part, such as the engine for the mixer.
