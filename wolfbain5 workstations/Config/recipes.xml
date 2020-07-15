@@ -8,9 +8,9 @@
 	
 	<recipe name="forge" count="1" tags="learnable">
         <ingredient name="destForge" count="1"/>
-		<ingredient name="resourceRockSmall" value="25"/>
-		<ingredient name="resourceClayLump" value="30"/>
-		<ingredient name="resourceLeather" value="5"/>
+		<ingredient name="resourceRockSmall" count="25"/>
+		<ingredient name="resourceClayLump" count="30"/>
+		<ingredient name="resourceLeather" count="5"/>
     </recipe>
 
 	<recipe name="cementMixer" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">

@@ -565,7 +565,7 @@
         <property name="Item" value="resourceWood"/>
         <property name="ItemCount" value="100"/>
         <property name="UpgradeHitCount" value="10"/>
-    </property>/>
+    </property>
 </append>
 
 <append xpath="/blocks/block[@name='chemistryStation']">
