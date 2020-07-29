@@ -1,0 +1,74 @@
+<config>
+
+<append xpath="/items">
+
+<item name="qc_percCrate">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="CustomIcon" value="bookSpearHunter1Damage"/>
+    <property name="DescriptionKey" value="qc_percCrateDesc"/>
+    <property name="ItemTypeIcon" value="treasure"/>
+	<property class="Action0">
+		<property name="UseAnimation" value="false"/>
+		<property name="QuestGiven" value="challenge_percCrate"/>
+	</property>
+</item>
+
+<item name="qc_strCrate">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="CustomIcon" value="bookBatterUpBigHits"/>
+    <property name="DescriptionKey" value="qc_strCrateDesc"/>
+    <property name="ItemTypeIcon" value="treasure"/>
+	<property class="Action0">
+		<property name="UseAnimation" value="false"/>
+		<property name="QuestGiven" value="challenge_strCrate"/>
+	</property>
+</item>
+
+<item name="qc_fortCrate">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="CustomIcon" value="bookBarBrawling1BasicMoves"/>
+    <property name="DescriptionKey" value="qc_fortCrateDesc"/>
+    <property name="ItemTypeIcon" value="treasure"/>
+	<property class="Action0">
+		<property name="UseAnimation" value="false"/>
+		<property name="QuestGiven" value="challenge_fortCrate"/>
+	</property>
+</item>
+
+<item name="qc_agilCrate">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="CustomIcon" value="bookNightStalkerStealthDamage"/>
+    <property name="DescriptionKey" value="qc_agilCrateDesc"/>
+    <property name="ItemTypeIcon" value="treasure"/>
+	<property class="Action0">
+		<property name="UseAnimation" value="false"/>
+		<property name="QuestGiven" value="challenge_agilCrate"/>
+	</property>
+</item>
+
+<item name="qc_intelCrate">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="CustomIcon" value="bookTechJunkie1Damage"/>
+    <property name="DescriptionKey" value="qc_intelCrateDesc"/>
+    <property name="ItemTypeIcon" value="treasure"/>
+	<property class="Action0">
+		<property name="UseAnimation" value="false"/>
+		<property name="QuestGiven" value="challenge_intelCrate"/>
+	</property>
+</item>
+
+<item name="qc_mechCrate">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="CustomIcon" value="bookWasteTreasuresHoney"/>
+    <property name="DescriptionKey" value="qc_mechCrateDesc"/>
+    <property name="ItemTypeIcon" value="treasure"/>
+	<property class="Action0">
+		<property name="UseAnimation" value="false"/>
+		<property name="QuestGiven" value="challenge_mechCrate"/>
+	</property>
+</item>
+
+</append>
+
+
+</config>

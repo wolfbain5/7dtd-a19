@@ -1,0 +1,20 @@
+<config>
+
+<append xpath="/lootcontainers">
+<!-- Our list of loot to give the player -->
+<lootgroup name="wolfbainStartergear" count="all">
+	<item name="armorMiningHelmet" mods="modArmorHelmetLight" mod_chance="1"/>
+	<item name="resourceYuccaFibers" count="100"/>
+	<item name="resourceWood" count="100"/>
+	<item name="resourceRockSmall" count="100"/>
+	<item name="resourceFeather" count="10"/>
+</lootgroup>
+
+
+<!-- The loot id we need to call to get our loot group. 
+This may certainly cause conflicts with other mods. -->
+<lootcontainer id="150" count="1" size="8,9" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+	<item group="wolfbainStartergear" count="1"/>
+</lootcontainer>
+</append>
+</config>

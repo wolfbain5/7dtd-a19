@@ -1,0 +1,32 @@
+<config> 
+
+<append xpath="/quests">
+
+	<quest id="challenge_percCrate" name_key="Starting Item" subtitle_key="Perception Class" description_key="Contains your players starting spear" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
+        <reward type="Item" id="meleeWpnSpearT0StoneSpear" value="3" />
+    </quest>
+
+	<quest id="challenge_strCrate" name_key="Starting Item" subtitle_key="Strength Class" description_key="Contains your players starting Wooden club" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
+        <reward type="Item" id="meleeWpnClubT0WoodenClub" value="3" />
+    </quest>	
+
+	<quest id="challenge_fortCrate" name_key="Starting Item" subtitle_key="Fortitude Class" description_key="Contains your players starting Leather knuckles" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
+        <reward type="Item" id="meleeWpnKnucklesT0LeatherKnuckles" value="3" />
+    </quest>
+
+	<quest id="challenge_agilCrate" name_key="Starting Item" subtitle_key="Agility Class" description_key="Contains your players starting Bone knife" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
+        <reward type="Item" id="meleeWpnBladeT0BoneKnife" value="3" />
+    </quest>
+
+	<quest id="challenge_intelCrate" name_key="Starting Item" subtitle_key="Intel Class" description_key="Contains your players starting Baton" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
+        <reward type="Item" id="meleeWpnBatonT2StunBaton" value="3" />
+    </quest>
+
+	<quest id="challenge_mechCrate" name_key="Starting Item" subtitle_key="Mechanic Class" description_key="Contains your players starting Wrench" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
+        <reward type="Item" id="meleeToolSalvageT1Wrench" value="3" />
+    </quest>
+
+</append>
+
+
+</config>

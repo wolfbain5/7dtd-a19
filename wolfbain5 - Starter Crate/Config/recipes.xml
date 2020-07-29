@@ -1,0 +1,32 @@
+<configs>
+<append xpath="/recipes">
+	
+	<recipe name="qc_percCrate" count="1">
+		<ingredient name="noteDuke01" count="1" />
+    </recipe>
+	
+	<recipe name="qc_strCrate" count="1">
+		<ingredient name="noteDuke01" count="1" />
+    </recipe>
+	
+	<recipe name="qc_fortCrate" count="1">
+		<ingredient name="noteDuke01" count="1" />
+    </recipe>
+	
+	<recipe name="qc_agilCrate" count="1">
+		<ingredient name="noteDuke01" count="1" />
+    </recipe>
+	
+	<recipe name="qc_intelCrate" count="1">
+		<ingredient name="noteDuke01" count="1" />
+    </recipe>
+	
+	<recipe name="qc_mechCrate" count="1">
+		<ingredient name="noteDuke01" count="1" />
+    </recipe>
+	
+
+
+</append>
+
+</configs>
