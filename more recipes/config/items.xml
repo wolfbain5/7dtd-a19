@@ -1,0 +1,77 @@
+<config>
+<!--
+<set xpath="/items/item[@name='apparelDenimPants']/effect_group/passive_effect[@name='HypothermalResist']/@value">100</set>
+<set xpath="/items/item[@name='apparelDenimPants']/effect_group/passive_effect[@name='HyperthermalResist']/@value">100</set>
+<set xpath="/items/item[@name='apparelArmyPants']/effect_group/passive_effect[@name='HypothermalResist']/@value">100</set>
+<set xpath="/items/item[@name='apparelArmyPants']/effect_group/passive_effect[@name='HyperthermalResist']/@value">100</set>
+-->
+
+
+<!-- stack sizes -->
+	<set xpath="/items/item[starts-with(@name, 'resource')]/property[@name='Stacknumber']/@value">10000</set>  <!-- Resources -->
+	<set xpath="/items/item[starts-with(@name, 'drink')]/property[@name='Stacknumber']/@value">50</set>  <!-- Drinks -->
+	<set xpath="/items/item[starts-with(@name, 'drug')]/property[@name='Stacknumber']/@value">50</set>  <!-- Drugs -->
+	<set xpath="/items/item[starts-with(@name, 'food')]/property[@name='Stacknumber']/@value">50</set>  <!-- Food -->
+    <set xpath="/items/item[starts-with(@name, 'ammo')]/property[@name='Stacknumber']/@value">500</set>  <!-- Ammo -->
+	<set xpath="/items/item[starts-with(@name, 'foodCrop')]/property[@name='Stacknumber']/@value">5000</set>  <!-- Crops -->
+	<set xpath="/items/item[starts-with(@name, 'medical')]/property[@name='Stacknumber']/@value">25</set>  <!-- Medical -->
+  
+  
+  <!-- Exceptions & Misc -->  
+	<set xpath="/items/item[@name='foodEgg']/property[@name='Stacknumber']/@value">5000</set> 
+	<set xpath="/items/item[@name='ammoGasCan']/property[@name='Stacknumber']/@value">5000</set>
+	<set xpath="/items/item[@name='casinoCoin']/property[@name='Stacknumber']/@value">25000</set>
+	<set xpath="/items/item[@name='drinkCanEmpty']/property[@name='Stacknumber']/@value">5000</set>  
+	<set xpath="/items/item[@name='drinkJarEmpty']/property[@name='Stacknumber']/@value">5000</set>
+	<set xpath="/items/item[@name='drinkJarRiverWater']/property[@name='Stacknumber']/@value">5000</set> 
+    <set xpath="/items/item[@name='foodRottingFlesh']/property[@name='Stacknumber']/@value">5000</set>
+	<set xpath="/items/item[@name='foodRawMeat']/property[@name='Stacknumber']/@value">5000</set>
+
+
+<!-- tool stamina drain -->
+<set xpath="/items/item[@name='meleeToolAxeT1IronFireaxe']/effect_group[@name='meleeToolAxeT1IronFireaxe']/passive_effect[@name='StaminaLoss'][@operation='base_set']/@value">16</set>
+<set xpath="/items/item[@name='meleeToolAxeT2SteelAxe']/effect_group[@name='meleeToolAxeT2SteelAxe']/passive_effect[@name='StaminaLoss'][@operation='base_set']/@value">24</set>
+<set xpath="/items/item[@name='meleeToolPickT1IronPickaxe']/effect_group[@name='meleeToolPickT1IronPickaxe']/passive_effect[@name='StaminaLoss'][@operation='base_set']/@value">16</set>
+<set xpath="/items/item[@name='meleeToolPickT2SteelPickaxe']/effect_group[@name='meleeToolPickT2SteelPickaxe']/passive_effect[@name='StaminaLoss'][@operation='base_set']/@value">24</set>
+<set xpath="/items/item[@name='meleeToolShovelT1IronShovel']/effect_group[@name='meleeToolShovelT1IronShovel']/passive_effect[@name='StaminaLoss'][@operation='base_set']/@value">16</set>
+<set xpath="/items/item[@name='meleeToolShovelT2SteelShovel']/effect_group[@name='meleeToolShovelT2SteelShovel']/passive_effect[@name='StaminaLoss'][@operation='base_set']/@value">24</set>
+
+<append xpath="/items">
+
+	<item name="berryBunch">
+		<property name="Extends" value="foodCropBlueberries"/>
+		<property name="DisplayType" value="foodRaw"/>
+		<property name="CustomIcon" value="foodCropBlueberries"/> <property name="CustomIconTint" value="9932CC"/>
+		<property name="EconomicValue" value="10"/>
+		<property name="Stacknumber" value="50"/>
+		<property name="EconomicBundleSize" value="5"/>
+		<property name="CraftingIngredientTime" value=".5"/>
+		<property class="Action0">
+			<property name="Delay" value="1.5"/>
+		</property>
+		<property name="Group" value="Food/Cooking,CFFood/Cooking,Science"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="5"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+		</effect_group>
+	</item>
+	
+	<item name="FireLog"> <!-- scrap material -->
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MresourceWood"/>
+	<property name="Weight" value="5"/>
+	<property name="CustomIcon" value="woodLogPillar100"/>
+	<property name="CustomIconTint" value="8a3324"/>
+	<property name="Stacknumber" value="50"/> <!-- STK resource -->
+	<property name="FuelValue" value="600"/>
+<!--	<property name="EconomicValue" value="25"/>
+	<property name="EconomicBundleSize" value="50"/>
+	<property name="Group" value="Resources"/> -->
+</item>
+
+</append>
+
+
+</config>
