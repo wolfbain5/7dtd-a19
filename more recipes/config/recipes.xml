@@ -1,6 +1,16 @@
 <configs>
 <append xpath="/recipes">
-
+	<recipe name="berryBunch" craft_time="2" count="1">
+		<ingredient name="resourceCropSnowberryPlant" count="5"/>
+	</recipe>
+	
+	<recipe name="berryBunch" craft_time="2" count="1">
+		<ingredient name="foodCropBlueberries" count="5"/>
+	</recipe>
+	
+	<recipe name="FireLog" craft_time="2" count="1">
+		<ingredient name="resourceWood" count="12"/>
+	</recipe>
 
 	<recipe name="resourcePaper" count="1">
 		<ingredient name="oldCash" count="1"/>
