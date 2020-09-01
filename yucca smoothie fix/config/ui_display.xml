@@ -1,6 +1,6 @@
 <configs>
 
-<set xpath="/item_display/item_display_info[@display_type='drinkYuccaSmoothie']/display_entry[@name='dHypothermalResist']/@title_key">statHyperthermalResist</set>  
+<set xpath="/ui_display_info/item_display/item_display_info[@display_type='drinkYuccaSmoothie']/display_entry[@name='dHypothermalResist']/@title_key">statHyperthermalResist</set>
 
 
 </configs>
