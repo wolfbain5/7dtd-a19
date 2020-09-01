@@ -1,7 +1,7 @@
 <configs>
 <append xpath="/recipes">
-	
-	<recipe name="foodMixedberryPie" craft_time="20" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+
+<recipe name="foodMixedberryPie" craft_time="20" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
 	<ingredient name="foodCropBlueberries" count="4"/>
 	<ingredient name="resourceCropSnowberryPlant" count="3"/>
 	<ingredient name="foodEgg" count="1"/>
@@ -22,7 +22,7 @@
 		<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="resourceCropSnowberryPlant,foodCropBlueberries"/>
 	</effect_group>
 </recipe>
-	
+
 	<recipe name="berryBunch" craft_time="2" count="1">
 		<ingredient name="resourceCropSnowberryPlant" count="5"/>
 	</recipe>
@@ -34,6 +34,7 @@
 	<recipe name="FireLog" craft_time="2" count="1">
 		<ingredient name="resourceWood" count="12"/>
 	</recipe>
+
 
 	<recipe name="resourcePaper" count="1">
 		<ingredient name="oldCash" count="1"/>
@@ -86,9 +87,14 @@
 	<ingredient name="foodCornMeal" count="2"/>
 	</recipe>
 	
+	<recipe name="resourceAcid" count="1" craft_area="chemistryStation">
+		<ingredient name="resourcePotassiumNitratePowder" count="5" />
+		<ingredient name="resourceCoal" count="5" />
+		<ingredient name="drinkJarRiverWater" count="1" />
+		<ingredient name="resourceBone" count="1" />
+    </recipe>
 	
 </append>
-
 
 
 </configs>

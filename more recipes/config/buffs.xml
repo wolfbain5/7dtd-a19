@@ -1,0 +1,30 @@
+<configs>
+
+<set xpath="/buffs/buff[@name='buffYuccaJuiceSmoothie']//passive_effect[@name='HypothermalResist']/@name">HyperthermalResist</set>  
+
+<!-- <remove xpath="/buffs/buff[@name='buffYuccaJuiceSmoothie']"/> -->
+
+<!--
+<append xpath="/buffs"
+	<buff name="buffYuccaJuiceSmoothie" name_key="drinkYuccaJuiceSmoothie" description_key="drinkYuccaJuiceSmoothieDesc" icon="ui_game_symbol_coffee">
+		<stack_type value="replace"/><duration value="0"/>
+		<display_value value=".buffYuccaJuiceSmoothieDisplay"/><display_value_format value="time"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffYuccaJuiceSmoothieDuration" operation="subtract" value="@$MetabolismDuration"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffYuccaJuiceSmoothieDisplay" operation="set" value="@$buffYuccaJuiceSmoothieDuration"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffYuccaJuiceSmoothieDisplay" operation="divide" value="@$MetabolismDuration"/>
+		</effect_group>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffYuccaJuiceSmoothie">
+				<requirement name="CVarCompare" cvar="$buffYuccaJuiceSmoothieDuration" operation="LTE" value="0"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".buffYuccaJuiceSmoothieDisplay" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffYuccaJuiceSmoothieDuration" operation="set" value="0"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="HyperthermalResist" operation="base_add" value="30"/>
+		</effect_group>
+	</buff>
+</append> 
+-->
+</configs>

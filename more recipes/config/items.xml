@@ -1,7 +1,8 @@
 <config>
 
+
 <append xpath="/items">
-	
+
 <item name="foodMixedberryPieSchematic">
 	<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 	<property name="CreativeMode" value="Player"/>
@@ -91,6 +92,7 @@
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
 	</effect_group>
 </item>
+
 
 	<item name="berryBunch">
 		<property name="Extends" value="foodCropBlueberries"/>
