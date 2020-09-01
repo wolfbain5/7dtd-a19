@@ -1,8 +1,5 @@
 <config>
 
-	<setattribute xpath="/lootcontainers/lootcontainer[@id='10']" name="destroy_on_close">true</setattribute>  <!-- garbage -->
-<!--	<set xpath="*//lootqualitytemplate[@name='qualPlus1Template']/qualitytemplate[@default_quality='1']/@default_quality">2</set> -->
-
 <append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipesT1']">
 	<item name="foodMixedberryPieSchematic"/>
 	<item name="drinkMixedberrySmoothieSchematic"/>
