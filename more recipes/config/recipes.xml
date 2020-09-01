@@ -1,5 +1,28 @@
 <configs>
 <append xpath="/recipes">
+	
+	<recipe name="foodMixedberryPie" craft_time="20" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	<ingredient name="foodCropBlueberries" count="4"/>
+	<ingredient name="resourceCropSnowberryPlant" count="3"/>
+	<ingredient name="foodEgg" count="1"/>
+	<ingredient name="foodCornMeal" count="1"/>
+	<ingredient name="resourceAnimalFat" count="1"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="resourceCropSnowberryPlant,foodCropBlueberries"/>
+	</effect_group>
+</recipe>
+
+<recipe name="drinkMixedberrySmoothie" craft_time="45" count="1" tags="perkMasterChef,learnable">
+	<ingredient name="resourceCropSnowberryPlant" count="4"/>
+	<ingredient name="foodCropBlueberries" count="4"/>
+	<ingredient name="resourceSnowBall" count="1"/>
+	<ingredient name="drinkJarEmpty" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="resourceCropSnowberryPlant,foodCropBlueberries"/>
+	</effect_group>
+</recipe>
+	
 	<recipe name="berryBunch" craft_time="2" count="1">
 		<ingredient name="resourceCropSnowberryPlant" count="5"/>
 	</recipe>
