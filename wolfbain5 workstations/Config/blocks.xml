@@ -1,6 +1,40 @@
-<config>
+<wolfbain5workstations>
 
 <append xpath="/blocks">
+
+<block name="destVendingMachine"> <!-- beverages vending machine -->
+	<property name="CreativeMode" value="Player"/>
+	<property name="Group" value="Science"/>
+	<property name="DescriptionKey" value="cntVendingMachineGroupDesc"/>
+	<property name="CustomIcon" value="cntVendingMachine2Broken"/>
+	<property name="CustomIconTint" value="#ff0000"/>
+	<property name="CanPickup" value="true"/>
+	<property name="DisplayType" value="blockHardenedMulti"/>
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="Entities/Crafting/vending_machinePrefab"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="143"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property class="RepairItems"> <property name="resourceForgedSteel" value="5"/> </property>
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicValue" value="2"/>
+	<property name="Buff" value="buffShocked"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceElectricParts" count="2,6" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="2,4" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceForgedIron" count="1,3" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceForgedSteel" count="2,3" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceScrapPolymers" count="2,5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceSpring" count="1,3" tag="allHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<drop event="Destroy" count="0"/>
+	<property name="FilterTags" value="floot,ffurniture"/>
+</block>
 
 <block name="destForge">
 
@@ -365,13 +399,12 @@
 	<property name="MaxDamage" value="5"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Path" value="solid"/>
-	<property name="CanPickup" value="true"/>
+	<property name="CanPickup" value="true" param1="w5cratedForge"/>
 	<property name="Stacknumber" value="1"/>
 	<property name="Model" value="#Entities/LootContainers?crate_storePrefab.prefab" />
 	<property name="DisplayInfo" value="Name"/>
 	<property name="Material" value="MwoodNoXp"/>
 	<drop event="Destroy" count="0"/>
-<!--	<property name="DowngradeBlock" value="forge"/> -->
 	<property name="FilterTags" value="floot"/>
 </block>
 
@@ -381,13 +414,12 @@
 	<property name="MaxDamage" value="5"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Path" value="solid"/>
-	<property name="CanPickup" value="true"/>
+	<property name="CanPickup" value="true" param1="w5cratedbatterybank"/>
 	<property name="Stacknumber" value="1"/>
 	<property name="Model" value="#Entities/LootContainers?crate_storePrefab.prefab" />
 	<property name="DisplayInfo" value="Name"/>
 	<property name="Material" value="MwoodNoXp"/>
 	<drop event="Destroy" count="0"/>
-<!--	<property name="DowngradeBlock" value="batterybank"/> -->
 	<property name="FilterTags" value="floot"/>
 </block>
 
@@ -397,13 +429,12 @@
 	<property name="MaxDamage" value="5"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Path" value="solid"/>
-	<property name="CanPickup" value="true"/>
+	<property name="CanPickup" value="true" param1="w5cratedsolarbank"/>
 	<property name="Stacknumber" value="1"/>
 	<property name="Model" value="#Entities/LootContainers?crate_storePrefab.prefab" />
 	<property name="DisplayInfo" value="Name"/>
 	<property name="Material" value="MwoodNoXp"/>
 	<drop event="Destroy" count="0"/>
-<!--	<property name="DowngradeBlock" value="solarbank"/> -->
 	<property name="FilterTags" value="floot"/>
 </block>
 
@@ -413,13 +444,12 @@
 	<property name="MaxDamage" value="5"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Path" value="solid"/>
-	<property name="CanPickup" value="true"/>
+	<property name="CanPickup" value="true" param1="w5cratedgeneratorbank"/>
 	<property name="Stacknumber" value="1"/>
 	<property name="Model" value="#Entities/LootContainers?crate_storePrefab.prefab" />
 	<property name="DisplayInfo" value="Name"/>
 	<property name="Material" value="MwoodNoXp"/>
 	<drop event="Destroy" count="0"/>
-<!--	<property name="DowngradeBlock" value="generatorbank"/> -->
 	<property name="FilterTags" value="floot"/>
 </block>
 
@@ -429,13 +459,12 @@
 	<property name="MaxDamage" value="5"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Path" value="solid"/>
-	<property name="CanPickup" value="true"/>
+	<property name="CanPickup" value="true" param1="w5cratedchemistrystation"/>
 	<property name="Stacknumber" value="1"/>
 	<property name="Model" value="#Entities/LootContainers?crate_storePrefab.prefab" />
 	<property name="DisplayInfo" value="Name"/>
 	<property name="Material" value="MwoodNoXp"/>
 	<drop event="Destroy" count="0"/>
-<!--	<property name="DowngradeBlock" value="chemistryStation"/>  -->
 	<property name="FilterTags" value="floot"/>
 </block>
 
@@ -445,13 +474,12 @@
 	<property name="MaxDamage" value="5"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Path" value="solid"/>
-	<property name="CanPickup" value="true"/>
+	<property name="CanPickup" value="true" param1="w5cratedcementmixer"/>
 	<property name="Stacknumber" value="1"/>
 	<property name="Model" value="#Entities/LootContainers?crate_storePrefab.prefab" />
 	<property name="DisplayInfo" value="Name"/>
 	<property name="Material" value="MwoodNoXp"/>
 	<drop event="Destroy" count="0"/>
-<!--	<property name="DowngradeBlock" value="cementMixer"/> -->
 	<property name="FilterTags" value="floot"/>
 </block>
 
@@ -461,16 +489,24 @@
 	<property name="MaxDamage" value="5"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Path" value="solid"/>
-	<property name="CanPickup" value="true"/>
+	<property name="CanPickup" value="true" param1="w5cratedworkbench"/>
 	<property name="Stacknumber" value="1"/>
 	<property name="Model" value="#Entities/LootContainers?crate_storePrefab.prefab" />
 	<property name="DisplayInfo" value="Name"/>
 	<property name="Material" value="MwoodNoXp"/>
 	<drop event="Destroy" count="0"/>
-<!--	<property name="DowngradeBlock" value="workbench"/>  -->
 	<property name="FilterTags" value="floot"/>
 </block>
 
+</append>
+
+<append xpath="/blocks/block[@name='cntVendingMachine2Broken']">
+   <property class="UpgradeBlock">
+        <property name="ToBlock" value="destVendingMachine"/>
+        <property name="Item" value="resourceWood"/>
+        <property name="ItemCount" value="8"/>
+        <property name="UpgradeHitCount" value="4"/>
+    </property>
 </append>
 
 <append xpath="/blocks/block[@name='cntCollapsedWorkbench']">
@@ -605,4 +641,4 @@
 </append>
 
 
-</config>
+</wolfbain5workstations>

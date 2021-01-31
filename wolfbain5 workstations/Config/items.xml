@@ -1,3 +1,103 @@
-<config>
-<append xpath="/items/item[@name='meleeToolRepairT0StoneAxe']/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">,resourceElectricParts,smallEngine</append>
-</config>
+<wolfbain5workstations>
+	<append xpath="/items/item[@name='meleeToolRepairT0StoneAxe']/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">,resourceElectricParts,smallEngine</append>
+
+	<!-- crates -->
+	<append xpath="/items" >
+		<item name="w5cratedForge">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntGarageStorage"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="CustomIconTint" value="210,0,210"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="Weight" value="0"/>
+			<property name="SellableToTrader" value="false"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0"/>
+				<property name="Use_time" value="0"/>
+				<property name="Sound_start" value="recipe_unlocked"/>
+				<property name="Create_item" value="forge"/>
+				<property name="Create_item_count" value="1"/>
+			</property>	
+		</item>
+		
+		<item name="w5cratedbatterybank">
+			<property name="Extends" value="w5cratedForge"/>
+			<property name="CustomIcon" value="cntGarageStorage"/>	
+			<property class="Action0">
+			<property name="Create_item" value="batterybank"/>
+			<property name="Create_item_count" value="1"/>
+			</property>
+		</item>
+		
+		<item name="w5cratedsolarbank">
+			<property name="Extends" value="cratedForge"/>
+			<property name="CustomIcon" value="cntGarageStorage"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Create_item" value="solarbank"/>
+				<property name="Create_item_count" value="1"/>
+			</property>
+		</item>
+		
+		<item name="w5cratedgeneratorbank">
+			<property name="Extends" value="cratedForge"/>
+			<property name="CustomIcon" value="cntGarageStorage"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Create_item" value="generatorbank"/>
+				<property name="Create_item_count" value="1"/>
+			</property>
+		</item>
+		
+		<item name="w5cratedchemistrystation">
+			<property name="Extends" value="cratedForge"/>
+			<property name="CustomIcon" value="cntGarageStorage"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Create_item" value="chemistryStation"/>
+				<property name="Create_item_count" value="1"/>
+			</property>
+		</item>
+		
+		<item name="w5cratedcementmixer">
+			<property name="Extends" value="cratedForge"/>
+			<property name="CustomIcon" value="cntGarageStorage"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Create_item" value="cementMixer"/>
+				<property name="Create_item_count" value="1"/>
+			</property>
+		</item>
+		
+		<item name="w5cratedworkbench">
+			<property name="Extends" value="cratedForge"/>
+			<property name="CustomIcon" value="cntGarageStorage"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Create_item" value="workbench"/>
+				<property name="Create_item_count" value="1"/>
+			</property>
+		</item>
+
+	</append>	
+</wolfbain5workstations>
